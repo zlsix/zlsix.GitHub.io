@@ -1,270 +1,206 @@
-<!DOCTYPE HTML>
-<!--
-	Directive by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Directive by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<head>
+<title>某社区《战国兰斯》专区</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
 
-		<!-- Header -->
-			<div id="header">
-				<span class="logo icon fa-paper-plane"></span>
-				<h1>Hi. This is Directive.</h1>
-				<p>A responsive HTML5 + CSS3 site template designed by <a href="http://html5up.net">HTML5 UP</a>
-				<br />
-				and released for free under the <a href="http://html5up.net/license">Creative Commons license</a>.</p>
-			</div>
+/* body 样式 */
+body {
+    font-family: Arial;
+    margin: 0;
+}
 
-		<!-- Main -->
-			<div id="main">
+/* 标题 */
+.header {
+    padding: 8px;
+    text-align: center;
+    background-color: rgba(0,0,0,0);
+    color: white;
+}
 
-				<header class="major container medium">
-					<h2>We conduct experiments that
-					<br />
-					may or may not seriously
-					<br />
-					break the universe</h2>
-					<!--
-					<p>Tellus erat mauris ipsum fermentum<br />
-					etiam vivamus nunc nibh morbi.</p>
-					-->
-				</header>
+/* 标题字体加大 */
+.header h1 {
+    font-size: 40px;
+}
+/*带下拉菜单的导航栏 */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
 
-				<div class="box alt container">
-					<section class="feature left">
-						<a href="#" class="image icon solid fa-signal"><img src="images/pic01.jpg" alt="" /></a>
-						<div class="content">
-							<h3>The First Thing</h3>
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
-						</div>
-					</section>
-					<section class="feature right">
-						<a href="#" class="image icon solid fa-code"><img src="images/pic02.jpg" alt="" /></a>
-						<div class="content">
-							<h3>The Second Thing</h3>
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
-						</div>
-					</section>
-					<section class="feature left">
-						<a href="#" class="image icon solid fa-mobile-alt"><img src="images/pic03.jpg" alt="" /></a>
-						<div class="content">
-							<h3>The Third Thing</h3>
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
-						</div>
-					</section>
-				</div>
+li {
+    float: left;
+}
 
-				<!--
-				<div class="box container">
-					<header>
-						<h2>A lot of generic stuff</h2>
-					</header>
-					<section>
-						<header>
-							<h3>Paragraph</h3>
-							<p>This is the subtitle for this particular heading</p>
-						</header>
-						<p>Phasellus nisl nisl, varius id <sup>porttitor sed pellentesque</sup> ac orci. Pellentesque
-						habitant <strong>strong</strong> tristique <b>bold</b> et netus <i>italic</i> malesuada <em>emphasized</em> ac turpis egestas. Morbi
-						leo suscipit ut. Praesent <sub>id turpis vitae</sub> turpis pretium ultricies. Vestibulum sit
-						amet risus elit.</p>
-					</section>
-					<section>
-						<header>
-							<h3>Blockquote</h3>
-						</header>
-						<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget.
-						tempus euismod. Vestibulum ante ipsum primis in faucibus.</blockquote>
-					</section>
-					<section>
-						<header>
-							<h3>Divider</h3>
-						</header>
-						<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
-						ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-						facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-						tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-						posuere cubilia.</p>
-						<hr />
-						<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
-						ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-						facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-						tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-						posuere cubilia.</p>
-					</section>
-					<section>
-						<header>
-							<h3>Unordered List</h3>
-						</header>
-						<ul class="default">
-							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-						</ul>
-					</section>
-					<section>
-						<header>
-							<h3>Ordered List</h3>
-						</header>
-						<ol class="default">
-							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-						</ol>
-					</section>
-					<section>
-						<header>
-							<h3>Table</h3>
-						</header>
-						<div class="table-wrapper">
-							<table class="default">
-								<thead>
-									<tr>
-										<th>ID</th>
-										<th>Name</th>
-										<th>Description</th>
-										<th>Price</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>45815</td>
-										<td>Something</td>
-										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>24524</td>
-										<td>Nothing</td>
-										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>45815</td>
-										<td>Something</td>
-										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>24524</td>
-										<td>Nothing</td>
-										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
-										<td>19.99</td>
-									</tr>
-								</tbody>
-								<tfoot>
-									<tr>
-										<td colspan="3"></td>
-										<td>100.00</td>
-									</tr>
-								</tfoot>
-							</table>
-						</div>
-					</section>
-					<section>
-						<header>
-							<h3>Form</h3>
-						</header>
-						<form method="post" action="#">
-							<div class="row">
-								<div class="col-6 col-12-mobilep">
-									<label for="name">Name</label>
-									<input class="text" type="text" name="name" id="name" value="" placeholder="John Doe" />
-								</div>
-								<div class="col-6 col-12-mobilep">
-									<label for="email">Email</label>
-									<input class="text" type="text" name="email" id="email" value="" placeholder="johndoe@domain.tld" />
-								</div>
-								<div class="col-12">
-									<label for="subject">Subject</label>
-									<input class="text" type="text" name="subject" id="subject" value="" placeholder="Enter your subject" />
-								</div>
-								<div class="col-12">
-									<label for="subject">Message</label>
-									<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
-								</div>
-								<div class="col-12">
-									<ul class="actions special">
-										<li><input type="submit" value="Send" /></li>
-										<li><input type="reset" value="Reset" class="alt" /></li>
-									</ul>
-								</div>
-							</div>
-						</form>
-					</section>
-				</div>
-				-->
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
-				<footer class="major container medium">
-					<h3>Get shady with science</h3>
-					<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
-					<ul class="actions special">
-						<li><a href="#" class="button">Join our crew</a></li>
-					</ul>
-				</footer>
+li a:hover, .dropdown:hover, .dropbtn {
+    background-color: #111;
+    
+}
 
-			</div>
+.dropdown {
+    display: inline-block;
+}
 
-		<!-- Footer -->
-			<div id="footer">
-				<div class="container medium">
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
 
-					<header class="major last">
-						<h2>Questions or comments?</h2>
-					</header>
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
 
-					<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor
-					orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
+.dropdown-content a:hover {background-color: #f1f1f1}
 
-					<form method="post" action="#">
-						<div class="row">
-							<div class="col-6 col-12-mobilep">
-								<input type="text" name="name" placeholder="Name" />
-							</div>
-							<div class="col-6 col-12-mobilep">
-								<input type="email" name="email" placeholder="Email" />
-							</div>
-							<div class="col-12">
-								<textarea name="message" placeholder="Message" rows="6"></textarea>
-							</div>
-							<div class="col-12">
-								<ul class="actions special">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</div>
-						</div>
-					</form>
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-					<ul class="icons">
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-					</ul>
 
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+/* 列容器 */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
 
-				</div>
-			</div>
+/* 创建两个列 */
+/* 边栏 */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+/* 主要的内容区域 */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.6);
+}
 
-	</body>
+/* 测试图片 */
+.fakeimg {
+    background-color: #2E8B57;
+    width: 100%;
+    padding: 20px;
+}
+
+/* 底部 */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<BODY BACKGROUND="img/back1.jpg">
+  <div class="header">
+  <img id="img" src="img/1.jpg" width="35%">
+  <script>
+  //修改图片src属性
+  var number = 1;
+  function fun(){
+  number ++ ;
+  //判断number是否大于6
+  if(number > 6){
+  number = 1;
+  }
+  //获取img对象
+  var img = document.getElementById("img");
+  img.src = "img/"+number+".jpg";}
+  //2.定义定时器,4秒循环一次
+  setInterval(fun,4000);
+</script>
+</div>
+
+<ul>
+  <li><a class="intro" href="r7.html">简介</a></li>
+  <li><a href="#rance">谁是兰斯？</a></li>
+  <li><a href="#artic">心得攻略</a></li>
+  <li><a href="003.html">注册</a></li>
+  <li><a href="#">登录</a></li>
+  <div class="dropdown">
+    <a href="#" class="dropbtn">登场角色、势力信息</a>
+    <div class="dropdown-content">
+      <a href="zhitinajia.html">织田家</a>
+      <a href="#">上杉家</a>
+      <a href="#">足利家</a>
+      <a href="#">原家</a>
+      <a href="#">伊贺家</a>
+    </div>
+  </div>
+</ul>
+
+<div class="row">
+  <div class="side">
+      <div class="img">
+    <a target="_blank" href="img/00.jpg">
+      <img src="img/00.jpg" alt="Trolltunga Norway" width="300">
+    </a>
+    <div class="desc">《战国兰斯》</div>
+  </div>
+  </div>
+  <div class="main">
+      <h2>推荐文章</h2>
+      <div class="fakeimg" style="height:400px;">
+      <p><a class="intr" href="https://tieba.baidu.com/p/940901382">战国兰斯311点达成，详细攻略</a></p><br>
+      <p><a class="intr" href="https://tieba.baidu.com/p/1002154100">320点冲刺！稍微直播一下</a></p><br>
+      <p><a class="intr" href="https://tieba.baidu.com/p/1087025483">战国兰斯321点战报</a></p><br>
+      <p><a class="intr" href="https://tieba.baidu.com/p/1319004259">战报属性，一周目159点（154+5）完成，耗时63回合</a></p><br>
+      <p><a class="intr" href="https://tieba.baidu.com/p/1078235518">【全国版大热闹】以最大几率捕获30/30武将——58有脸+油娘+强子</a></p><br>
+
+      <br>
+      </div>
+    
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Rance7blablabla</h2>
+</div>
+
+
+</body>
 </html>

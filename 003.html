@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单</title>
+<style>
+form {text-shadow:2px 2px white;}
+#bg-image{   
+    background-image:url("00000065.jpg"); 
+    background-position: center 0;   
+    background-repeat: no-repeat;   
+    background-attachment:fixed;   
+    background-size: cover;   
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    zoom: 1; 
+    opacity:1; 
+}
+.center {
+    padding: 200px 0;
+    border: 3px solid green;
+    text-align: center;
+}
+</style>
+
+<script>
+function validateForm(){
+	var x=document.forms["myForm"]["email"].value;
+	var atpos=x.indexOf("@");
+	var dotpos=x.lastIndexOf(".");
+	if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length){
+		alert("不是一个有效的 e-mail 地址");
+  		return false;}
+  	var y=document.forms["myForm"]["fname"].value;
+	if (y==null || y==""){
+  		alert("姓名必须填写");
+  		return false;}
+  	var z=document.forms["myForm"]["pswd"].value;
+	if (z==null || z==""){
+  		alert("密码必须填写");
+  		return false;}
+  	alert("提交成功！");
+}
+</script>
+</head>
+<body>
+<div id="bg-image">
+
+
+
+	<div class="center">
+	<form name="myForm" action="index.html" onsubmit="return validateForm();" method="post">
+		name:<input type="text" name="fname"><br>
+		password:<input type="password" name="pswd"><br>
+		Email: <input type="text" name="email"><br>
+		sex:
+		<input type="radio" name="sex" checked="male">male
+		<input type="radio" name="sex">female<br>
+		bloodtype:
+		<input type="radio" name="bloodtype" checked="O">O
+		<input type="radio" name="bloodtype">A
+		<input type="radio" name="bloodtype">B
+		<input type="radio" name="bloodtype">AB<br>
+		character:
+		<input type="checkbox" name="character" checked="warm and generous">warm and generous
+		<input type="checkbox" name="character">gentle
+		<input type="checkbox" name="character">affectionate<br>
+		file:
+		<input type="file" name="qxzwj"/><br>
+		introduction:
+		<textarea rows="6" cols="20"></textarea><br>
+		city:
+		<select>
+			<option selected="beij">包头市</option>
+			<option>北京市</option>
+			<option>杭州市</option>
+			<option>呼和浩特市</option>
+			<option>天津市</option>
+		</select><br>
+		
+		
+		<input type="submit" name="submit">
+		<input type="reset" name="reset"><br>
+		<a href="index.html">Back</a>
+
+	</form>
+	</div>
+</div>
+</body>
+</html>
